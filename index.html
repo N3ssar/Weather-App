@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="assets/message/weather-news.png" type="image/x-icon">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Css -->
+    <link href="assets/src/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="main-container p-5 overflow-hidden rounded-2xl">
+
+        <header class="search-container relative mb-6.5">
+            <input type="text" class="city-search w-full py-2.5 px-4 rounded-4xl font-medium text-white pr-12"
+                placeholder="Search for a city...">
+            <button class="search-button absolute top-1/2 right-4 -translate-y-1/2 cursor-pointer">
+                <img src="assets/weather/location_searching_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                    class="cursor-pointer" alt="Search Icon">
+            </button>
+        </header>
+
+
+        <section class="weather-info hidden">
+            <div class="location-date flex justify-between items-center my-4">
+                <div class="location flex items-center gap-1.5">
+                    <img src="assets/weather/location_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"
+                        class="location-icon" alt="Location Icon">
+                    <h4 class="country-text">Asyut</h4>
+                </div>
+                <h5 class="current-date regular-text">
+                    wed, 07 feb 2025
+                </h5>
+            </div>
+
+            <div class="weather-summary flex items-center justify-between text-end  ">
+                <img src="assets/weather/clouds.svg" class="weather-image w-28 h-28" alt="Weather image">
+                <div class="weather-summary-info">
+                    <h1 class="weather-temp text-3xl">25 °C</h1>
+                    <h3 class="regular-text condition-text text-2xl text-wrap">Cloudy</h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions flex  text-center justify-between items-center mt-6.5">
+                <div class="condition-item flex items-center gap-1.5">
+                    <img src="assets/weather/water_drop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" class="w-8 h-8"
+                        alt="Humidity Icon">
+                    <div class="condition-info">
+                        <h4 class="condition-title regular-text">Humidity</h4>
+                        <h4 class="humidity-value regular-text">64%</h4>
+                    </div>
+                </div>
+                <div class="condition-item flex items-center text-center gap-1.5">
+                    <img src="assets/weather/air_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" class="w-8 h-8"
+                        alt="Wind Icon">
+                    <div class="condition-info ">
+                        <h4 class="condition-title regular-text">Wind Speed</h4>
+                        <h4 class="wind-value regular-text">5 km/h</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-container pb-3 flex justify-between
+             items-center gap-2.5 mt-6.5 overflow-x-scroll">
+                <div class="forecast-item min-w-20 flex-col p-2.5 gap-2  items-center rounded-2xl">
+                    <h4 class=" forecast-item-date regular-text">
+                        05 Aug
+                    </h4>
+                    <img src="assets/weather/thunderstorm.svg" class="w-12 h-12" al="Weather image">
+                    <h5 class="forecast-item-temperature">
+                        25 °C
+                    </h5>
+                </div>
+                <div class="forecast-item  min-w-20 flex-col p-2.5 gap-2  items-center rounded-2xl">
+                    <h4 class=" forecast-item-date regular-text">
+                        06 Aug</h4>
+                    <img src="assets/weather/thunderstorm.svg" class="w-12 h-12" al="Weather image">
+                    <h5 class="forecast-item-temperature">
+                        25 °C
+                    </h5>
+                </div>
+                <div class="forecast-item min-w-20 flex-col p-2.5 gap-2  items-center rounded-2xl">
+                    <h4 class=" forecast-item-date regular-text">
+                        07 Aug</h4>
+                    <img src="assets/weather/thunderstorm.svg" class="w-12 h-12" al="Weather image">
+                    <h5 class="forecast-item-temperature">
+                        25 °C
+                    </h5>
+                </div>
+                <div class="forecast-item min-w-20 flex-col p-2.5 gap-2  items-center rounded-2xl">
+                    <h4 class=" forecast-item-date regular-text">
+                        08 Aug</h4>
+                    <img src="assets/weather/thunderstorm.svg" class="w-12 h-12" al="Weather image">
+                    <h5 class="forecast-item-temperature">
+                        25 °C
+                    </h5>
+                </div>
+                <div class="forecast-item min-w-20 flex-col p-2.5 gap-2  items-center rounded-2xl">
+                    <h4 class=" forecast-item-date regular-text">
+                        09 Aug</h4>
+                    <img src="assets/weather/thunderstorm.svg" class="w-12 h-12" al="Weather image">
+                    <h5 class="forecast-item-temperature">
+                        25 °C
+                    </h5>
+                </div>
+        </section>
+
+        <section class="search-city section-message text-center ">
+            <img src="assets/message/search-city.png" class="message-image mt-7 max-w-full" alt="Search City Image">
+            <div class="message-content my-4">
+                <h1 class="text-3xl search-message-title">Search City</h1>
+                <p class="regular-text my-3 search-message-paragraph">Search for a city to see the weather forecast.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
