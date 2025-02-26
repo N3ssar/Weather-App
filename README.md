@@ -20,7 +20,7 @@ A responsive and elegant weather application that provides current weather and a
 
 ## 🖼️ Screenshots
 
-![Weather App Screenshot](assets/screenshots/app-screenshot.png)
+![Weather App Screenshot](assets/app-screenshot.png)
 
 ## 🛠️ Setup and Installation
 
